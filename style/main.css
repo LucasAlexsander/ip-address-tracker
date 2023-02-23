@@ -1,0 +1,187 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  font-family: "Rubik", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background: url(../images/pattern-bg-desktop.png) no-repeat;
+  background-size: contain;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+  padding: 15px;
+}
+body main {
+  z-index: 1;
+  width: 80%;
+  height: 45%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  color: #fff;
+}
+body main header h1 {
+  text-align: center;
+  font-size: 33px;
+  font-weight: 500;
+}
+body main form {
+  width: 60%;
+  height: 58px;
+  display: flex;
+}
+body main form input {
+  width: 100%;
+  padding-left: 25px;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  border-radius: 13px 0 0 13px;
+}
+@media (max-width: 1045px) {
+  body main form input {
+    font-size: 0.8rem;
+  }
+}
+body main form button {
+  width: 58px;
+  border-radius: 0 13px 13px 0;
+  border: none;
+  outline: none;
+  background-color: #000;
+  color: white;
+  cursor: pointer;
+  transition: background 0.1s linear;
+}
+body main form button:hover {
+  background: #3f3f3f;
+}
+body main .container {
+  position: relative;
+  width: 100%;
+  min-height: 161px;
+  height: auto;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 15px;
+  color: #000;
+  z-index: 2;
+}
+body main .container .group {
+  position: relative;
+  width: 277px;
+  height: 100%;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+  z-index: 1;
+}
+body main .container .group .text {
+  height: 100%;
+  padding: 35px 17%;
+}
+body main .container .group p {
+  font-size: 13px;
+  letter-spacing: 10%;
+  text-transform: uppercase;
+  color: #989898;
+}
+body main .container .group span {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+@media (max-width: 1350px) {
+  body main .container .group span {
+    font-size: 1.2rem;
+  }
+}
+@media (max-width: 1045px) {
+  body main .container .group span {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 910px) {
+  body main .container .group p {
+    font-size: 0.5rem;
+  }
+  body main .container .group span {
+    font-size: 0.8rem;
+  }
+}
+body main .container .group::after {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 74px;
+  right: 0px;
+  background-color: #d9d9d9;
+}
+body main .container .group:last-child::after {
+  display: none;
+}
+body #map {
+  position: absolute;
+  bottom: 0;
+  width: 100vw;
+  height: 63%;
+  outline: 0;
+  z-index: 0;
+}
+@media (max-width: 750px) {
+  body {
+    background: url(../images/pattern-bg-mobile.png) no-repeat;
+    background-size: contain;
+    height: auto;
+  }
+  body main {
+    height: 410px;
+  }
+  body main form {
+    width: 100%;
+  }
+  body main .container {
+    flex-direction: column;
+    min-height: 100px;
+    height: 240px;
+  }
+  body main .container .group {
+    width: 100%;
+  }
+  body main .container .group .text {
+    width: 100%;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  body main .container .group::after {
+    display: none;
+    height: 100%;
+  }
+  body #map {
+    height: 100%;
+    bottom: -300px;
+  }
+}
+
+footer {
+  display: none;
+  font-size: 11px;
+  text-align: center;
+}
+footer a {
+  color: hsl(228deg, 45%, 44%);
+}/*# sourceMappingURL=main.css.map */
