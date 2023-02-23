@@ -13,7 +13,8 @@ body {
   width: 100vw;
   height: 100vh;
   background: url(../images/pattern-bg-desktop.png) no-repeat;
-  background-size: contain;
+  background-size: 100% 300px;
+  background-attachment: fixed;
   display: flex;
   justify-content: start;
   align-items: center;
@@ -102,6 +103,7 @@ body {
           letter-spacing: 10%;
           text-transform: uppercase;
           color: #989898;
+          margin-bottom: 8px;
         }
 
         span {
@@ -153,7 +155,7 @@ body {
 
   @media (max-width: 750px) {
     background: url(../images/pattern-bg-mobile.png) no-repeat;
-    background-size: contain;
+    background-size: 100% 300px;
     height: auto;
 
     main {

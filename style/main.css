@@ -12,7 +12,8 @@ body {
   width: 100vw;
   height: 100vh;
   background: url(../images/pattern-bg-desktop.png) no-repeat;
-  background-size: contain;
+  background-size: 100% 300px;
+  background-attachment: fixed;
   display: flex;
   justify-content: start;
   align-items: center;
@@ -97,6 +98,7 @@ body main .container .group p {
   letter-spacing: 10%;
   text-transform: uppercase;
   color: #989898;
+  margin-bottom: 8px;
 }
 body main .container .group span {
   font-size: 1.5rem;
@@ -142,7 +144,7 @@ body #map {
 @media (max-width: 750px) {
   body {
     background: url(../images/pattern-bg-mobile.png) no-repeat;
-    background-size: contain;
+    background-size: 100% 300px;
     height: auto;
   }
   body main {
